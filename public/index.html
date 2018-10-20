@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet/less" type="text/css" href="css/style.less" />
+	<title>MindFlow v0.1</title>
+	<base href="/" />
+</head>
+<body>
+
+	<!-- Main content -->
+	<div>
+		<div id="titleBar">
+		  <span id="sidenavBtn"></span>
+			<p id="title">TITLE OF PAGE</p>
+		</div>
+		<div id="mySideNav" class="sidenav">
+			<div id="myUserSection" class="userSection">
+			</div>
+			<a href="/">Home</a>
+			<a href="/charts">Charts</a>
+		</div>
+		<div id="appContainer">TO RENDER</div>
+	</div>
+
+<!--
+	<div>
+		<form>
+			New Chart Name: <input type="text" name="chartName">
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+-->
+
+	<!-- Handlebars templates -->
+	<script id="error-template" type="text/x-handlebars-template">
+		<div class="content">
+			HTTP 404: Path {{faultyPath}} does not exist!
+		</div>
+	</script>
+
+	<script id="splash-template" type="text/x-handlebars-template">
+		<p>PICTURES GO HERE</p>
+		<h1 id="welcometomindflow">Welcome to MindFlow!</h1>
+		<h2 id="whatisit">What is it?</h2>
+		<p>Mind flow is a mental flow visualization tool. You can use it to do many things, such as:</p>
+		<ul>
+			<li>Mapping out your thought process when trying to follow up on multiple user stories.</li>
+			<li>Build a graph to capture the overall progress of an epic.</li>
+			<li>And much more!</li>
+		</ul>
+		<h2 id="howtouseit">How to use it</h2>
+		<p>See the tutorial section.</p>
+		<h2 id="letsgetstarted">Let's Get Started!</h2>
+		<p><a href="TODO">Log in</a> to get and save charts to the cloud, or continue as a <a href="TODO">guest</a>.</p>
+		<h2 id="about">About</h2>
+		<p>MindFlow is created by Toni Tran. You can contribute to the project or see the source
+			<a href="https://github.com/tonitran/mind-mapper">here!</a>
+		</p>
+	</script>
+
+	<script id="charts-template" type="text/x-handlebars-template">
+		<span id="addChartBtn">ADD</span>
+		<div id="chartsList">
+			<a data-chartid="12345">Chart1</a>
+			<a data-chartid="67890">Chart2</a>
+			<a data-chartid="13579">Chart3</a>
+		</div>
+	</script>
+
+	<script id="editor-template" type="text/x-handlebars-template">
+		<h1>{{id}}</h1>
+		<div>
+			CANVAS HERE
+		</div>
+	</script>
+
+	<!-- JS Library Dependencies -->
+	<script src="scripts/jquery/dist/jquery.min.js"></script>
+	<script src="scripts/handlebars/dist/handlebars.min.js"></script>
+	<script src="scripts/less/dist/less.min.js"></script>
+	<script src="scripts/page/page.js"></script>
+
+	<!-- Load our script -->
+	<script src="js/app.js"></script>
+
+</body>
+</html>

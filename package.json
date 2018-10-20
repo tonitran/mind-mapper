@@ -1,0 +1,31 @@
+{
+  "name": "mind-mapper",
+  "version": "1.0.0",
+  "description": "This is a project demo.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonitran/mind-mapper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonitran/mind-mapper/issues"
+  },
+  "homepage": "https://github.com/tonitran/mind-mapper#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "handlebars": "^4.0.12",
+    "jquery": "^3.3.1",
+    "jqueryui": "^1.11.1",
+    "less": "^3.8.1",
+    "page": "^1.10.2"
+  }
+}
